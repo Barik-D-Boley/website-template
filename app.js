@@ -4,10 +4,12 @@ var app = express();
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
-// use res.render to load up an ejs view file
+app.use("/styles", express.static(__dirname + "/views/styles")) // Use this when linking stuff in ejs
 
 // index page
 app.get('/', function (req, res) {
+    let title = "Homepage";
+
     res.render('pages/index');
 });
 
