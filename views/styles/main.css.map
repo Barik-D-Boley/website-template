@@ -1,1 +1,17 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "_colors.scss",
+        "partials/_footer.scss",
+        "partials/_head.scss",
+        "partials/_navbar.scss",
+        "pages/_about.scss",
+        "pages/_contact.scss",
+        "pages/_home.scss",
+        "pages/_login.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

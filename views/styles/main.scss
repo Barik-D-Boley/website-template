@@ -1,13 +1,13 @@
 // Misc
-@import "./colors";
+@import "./_colors.scss";
 
 // Partials
-@import "./partials/footer.scss";
-@import "./partials/head.scss";
-@import "./partials/navbar.scss";
+@import "./partials/_footer.scss";
+@import "./partials/_head.scss";
+@import "./partials/_navbar.scss";
 
 // Pages
-@import "./pages/about.scss";
-@import "./pages/contact.scss";
-@import "./pages/home.scss";
-@import "./pages/login.scss";
+@import "./pages/_about.scss";
+@import "./pages/_contact.scss";
+@import "./pages/_home.scss";
+@import "./pages/_login.scss";
