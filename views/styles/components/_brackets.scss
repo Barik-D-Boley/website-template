@@ -1,0 +1,116 @@
+$brackets-top: 40.3rem;
+
+.bracket-pair {
+    position: absolute;
+    display: inline-flex;
+    width: 31.5rem;
+    justify-content: space-between;
+}
+.opening-bracket {
+    border: .2rem solid $resume-text;
+    border-right: none;
+    width: 1rem;
+}
+.closing-bracket {
+    border: .2rem solid $resume-text;
+    border-left: none;
+    width: 1rem;
+}
+    #brackets_1 {
+        top: $brackets-top;
+        div {
+            height: 3.5rem;
+        }
+    }
+    #brackets_2 {
+        top: $brackets-top+11.7rem;
+        div {
+            height: 6.3rem;
+        }
+    }
+    #brackets_3 {
+        top: $brackets-top+36.3rem;
+        div {
+            height: 5.5rem;
+        }
+    }
+    #brackets_4 {
+        top: $brackets-top+54.4;
+        div {
+            height: 7rem;
+        }
+    }
+
+@media screen and (max-width: 77rem) {
+    $brackets-top: 41.7rem;
+    .bracket-pair {
+        width: 29.6rem;
+    }
+    #brackets_1 {
+        top: $brackets-top;
+        div {
+            height: 3.5rem;
+        }
+    }
+    #brackets_2 {
+        top: $brackets-top+11.7rem;
+        div {
+            height: 6.3rem;
+        }
+    }
+    #brackets_3 {
+        top: $brackets-top+36.3rem;
+        div {
+            height: 5.5rem;
+        }
+    }
+    #brackets_4 {
+        top: $brackets-top+56;
+        div {
+            height: 7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    $brackets-top: 39rem;
+    .bracket-pair {
+        width: 29.6rem;
+    }
+    #resume-container {
+        max-width: 100%;
+    }
+    #brackets_1 {
+        top: $brackets-top;
+        div {
+            height: 3.5rem;
+        }
+    }
+    #brackets_2 {
+        top: $brackets-top+11.7rem;
+        div {
+            height: 6.3rem;
+        }
+    }
+    #brackets_3 {
+        top: $brackets-top+36.3rem;
+        div {
+            height: 5.5rem;
+        }
+    }
+    #brackets_4 {
+        top: $brackets-top+56;
+        div {
+            height: 7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .opening-bracket {
+        display: none;
+    }
+    .closing-bracket {
+        display: none;
+    }
+}

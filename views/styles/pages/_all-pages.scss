@@ -1,0 +1,12 @@
+// Oswald
+@font-face {
+    font-family: oswald;
+    src: url('./fonts/Oswald.ttf');
+}
+* {
+
+}
+body {
+    background-color: $background;
+    font-family: oswald;
+}

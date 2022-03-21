@@ -1,0 +1,333 @@
+@import '../components/connectedDots';
+@import '../components/brackets';
+
+#resume-container {
+    display: flex;
+    background-color: $resume-background;
+    margin: 0 auto;
+    padding: 3.5rem;
+    width: 77rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    box-sizing: border-box;
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        margin: .3rem 0;
+        color: $resume-subtitles;
+    }
+    h3 {
+        font-size: 1.75rem;
+        margin: 1rem 0 0 2rem;
+        margin-top: 4rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+        margin: .3rem 0;
+    }
+    h4.experience-title {
+        font-weight: 600;
+        margin-bottom: 0;
+        right: 2rem;
+    }
+    h4.experience-subtitle {
+        color: $experience-subtitle;
+    }
+    hr {
+        height: .2rem;
+        background-color: $resume-text;
+        border: none;
+    }
+}
+
+#resume-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    #print-btn {
+        font-size: 2rem;
+    }
+
+    #resume-contacts {
+        text-align: right;
+        flex-direction: column;
+
+        .contact-div {
+            margin-bottom: .5rem;
+            a {
+                text-decoration: none;
+                margin-bottom: 1rem;
+                &:hover {
+                    color: $resume-link-hover;
+                }
+                .resume-icon {
+                    color: $resume-subtitles;
+                    position: relative;
+                    top: .2rem
+                }
+            }
+        }
+    }
+}
+
+.resume-btn {
+    background: none;
+    border: none;
+    color: $link-hover;
+    transition: color .2s ease;
+    &:hover {
+        color: $link;
+        cursor: pointer;
+    }
+}
+.download-btn {
+    position: relative;
+    top: .2rem;
+    margin-right: .2rem;
+}
+
+#resume-website-link {
+    display: none;
+}
+
+#resume-bottom {
+    display: flex;
+    justify-content: space-between;
+    .column {
+        width: 48%;
+    }
+}
+
+.text-boxes {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+
+.resume-text {
+    color: $resume-text;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    transition: color 0.2s ease;
+}
+.resume-description {
+    color: $resume-descriptions;
+    font-size: 1.15rem;
+    font-style: italic;
+    margin: .3rem auto;
+}
+.descriptor-list {
+    margin-top: .3rem;
+    li {
+        color: $resume-text;
+        font-size: 1.15rem;
+    }
+}
+
+.resume-subtitles {
+    color: $resume-subtitles;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: .6rem;
+    margin-bottom: 0;
+    a {
+        color: $resume-subtitles;
+        text-decoration: none;
+        &:hover {
+            color: $skills-background;
+        }
+    }
+}
+.list-title {
+    color: $resume-subtitles;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: .4rem 0 0 2rem;
+}
+.experience-list {
+    margin-top: .3rem;
+    margin-bottom: .5rem;
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+li.resume-text {
+    width: 40%;
+    padding-right: 10%;
+}
+li.no-columns-list {
+    width: 100%;
+    padding: 0;
+}
+
+.skill-box {
+    background-color: $skills-background;
+    color: $resume-background;
+    display: inline-flex;
+    border-radius: .375rem;
+    padding: .375rem .875rem;
+    margin: 0 .5rem .5rem 0;
+}
+
+.interest-box {
+    border: .15rem solid $skills-background;
+    border-radius: .375rem;
+    color: $resume-text;
+    display: inline-flex;
+    padding: .375rem .875rem;
+    margin: 0 .5rem .5rem 0;
+}
+
+.inline-date-container {
+    display: flex;
+    justify-content: space-between;
+    p {
+        display: inline-flex;
+    }
+}
+
+@media screen and (max-width: 77rem) {
+    #resume-container {
+        width: 38.5rem;
+    }
+    #resume-bottom {
+        flex-direction: column;
+    }
+    #resume-bottom {
+        .column {
+            width: 100%;
+        }
+    }
+    .center-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #resume-container {
+        padding: 3rem 1rem;
+    }
+    
+    #resume-top {
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        #resume-contacts {
+            margin-top: 1rem;
+            text-align: center;
+            align-self: center;
+            a {
+                color: $text;
+            }
+        }
+    }
+
+    .center-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .experience-list {
+        flex-direction: column;
+    }
+    li.resume-text {
+        width: 100%;
+        padding-right: 0;
+    }
+    .experience-list {
+        width: auto;
+    }
+}
+
+@page { size: auto;  margin: 0mm; }
+
+@media print {
+    // Main Page
+    body {
+        background: none;
+        position: relative;
+        top: 3rem;
+    }
+    #navbar {
+        display: none;
+        margin: 0;
+        box-shadow: none;
+    }
+    .nav-drop-down {
+        display: none;
+    }
+    #nav-top {
+        display: none;
+    }
+    #drop-down-icon {
+        display: none;
+    }
+    #nav-title {
+        display: none;
+    }
+    .resume-btn {
+        display: none;
+    }
+    #resume-website-link {
+        display: block;
+    }
+    #resume-container {
+        position: relative;
+        bottom: 4rem;
+        background: none;
+        hr {
+            display: block;
+            height: 1px;
+            width: 100%;
+            border: none;
+            border-top: solid .2rem black;
+        }
+        h3 {
+            margin-top: 3.5rem;
+        }
+    }
+    .skill-box {
+        -webkit-print-color-adjust: exact;
+    }
+    #footer {
+        display: none;
+    }
+
+    // Brackets Positioning
+    $brackets-top: 33.3rem;
+    .bracket-pair {
+        width: 31.5rem;
+    }
+    #brackets_1 {
+        top: $brackets-top;
+        div {
+            height: 3.5rem;
+        }
+    }
+    #brackets_2 {
+        top: $brackets-top+11.7rem;
+        div {
+            height: 6.3rem;
+        }
+    }
+    #brackets_3 {
+        top: $brackets-top+36rem;
+        div {
+            height: 5.5rem;
+        }
+    }
+    #brackets_4 {
+        top: $brackets-top+54.2;
+        div {
+            height: 7rem;
+        }
+    }
+
+    // Dots Positioning
+    $dots-top: 26.8rem;
+    #dots_1 {
+        top: $dots-top;
+    }
+    #dots_2 {
+        top: $dots-top+34rem;
+    }
+}

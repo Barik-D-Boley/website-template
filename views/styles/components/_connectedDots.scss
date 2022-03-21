@@ -1,0 +1,69 @@
+$dots-top: 33.7rem;
+
+.connected-bullets {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.circle {
+    border: .3rem solid $resume-subtitles;
+    border-radius: 50%;
+    width: .7rem;
+    height: .7rem;
+    margin: 0;
+    position: relative;
+}
+.circle_2 {
+    bottom: .15rem;
+}
+
+.line {
+    border: .1rem solid $resume-subtitles;
+    background-color: $resume-subtitles;
+    width: .03rem;
+    bottom: .1rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+#dots_1 {
+    top: $dots-top;
+}
+#line_1 {
+    height: 10.2rem;
+}
+
+#dots_2 {
+    top: $dots-top+34.5rem;
+}
+#line_2 {
+    height: 16.7rem;
+}
+
+// For when the resume becomes one column
+@media screen and (max-width: 77rem) {
+    $dots-top: 35rem;
+    #dots_1 {
+        top: $dots-top;
+    }
+    #dots_2 {
+        top: $dots-top+34.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    $dots-top: 32.5rem;
+    #dots_1 {
+        top: $dots-top;
+    }
+    #dots_2 {
+        top: $dots-top+34.5rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .connected-bullets {
+        display: none;
+    }
+}
