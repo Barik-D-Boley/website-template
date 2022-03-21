@@ -2,11 +2,13 @@ footer {
     background-color: $footer-background;
     position: fixed;
     bottom: 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
     width: 100vw;
     display: flex;
     flex-direction: column;
-    padding: 1.25rem;
-    box-sizing: border-box;
+    padding: 1rem;
     h3 {
         color: $secondary-color;
     }
@@ -33,16 +35,18 @@ footer {
     justify-content: space-around;
     h3 {
         margin: 0;
-        margin-bottom: .75rem;
+        margin-bottom: .5rem;
     }
     p {
-        margin: .3rem 0;
-        color: #c0c0c0;
+        margin: .2rem 0;
     }
     a {
-        margin: .3rem 0;
+        margin: .2rem 0;
         white-space:nowrap;
         width: auto;
+    }
+    #barik-website {
+        // color: ;
     }
     .footer-list {
         display: flex;
@@ -57,9 +61,32 @@ footer {
     }
 }
 
+// Homepage
+@media screen and (max-height: 990px) {
+    #home-page {
+        footer {
+            position: relative;
+            box-sizing: none;
+            margin-top: 2rem;
+        }
+    }
+}
+
 // Resume Page
 #resume-page {
     footer {
         position: relative;
+        box-sizing: none;
+    }
+}
+
+// Contact
+@media screen and (max-height: 880px) {
+    .contact-page {
+        footer {
+            position: relative;
+            margin-top: 3rem;
+            box-sizing: none;
+        }
     }
 }

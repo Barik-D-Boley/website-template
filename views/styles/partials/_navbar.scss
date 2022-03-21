@@ -41,3 +41,33 @@ nav {
     width: auto;
     height: 4rem;
 }
+#drop-down-menu {
+    display: none;
+}
+.bar {
+    height: .3rem;
+    width: 100%;
+    background-color: $text-main;
+    border-radius: .5rem;
+}
+.dropped-menu {
+    
+}
+
+@media screen and (max-width: 600px) {
+    #nav-right {
+        display: none;
+    }
+    #drop-down-menu {
+        background: none;
+        border: none;
+        display: flex;
+        position: relative;
+        right: 1.5rem;
+        margin: auto 0;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 3rem;
+        height: 1.75rem;
+    }
+}

@@ -1,15 +1,18 @@
 <%- include('../partials/head', {title: "Login"}) %>
-<%- include('../partials/navbar') %>
 
-<div>
-    <form action="/login" method="post">
-        <p>Email:</p>
-        <input type="email" name="email" placeholder="Email" required>
-        <p>Password:</p>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login">
-    </form>
-    <a href="/register">Create a new Account</a>
+<div id="login-page">
+    <%- include('../partials/navbar') %>
+
+    <div id="login-form-container">
+        <form action="/login" method="post">
+            <p>Email:</p>
+            <input type="email" name="email" required>
+            <p>Password:</p>
+            <input type="password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+        <a href="/register">Create a new Account</a>
+    </div>
+
+    <%- include('../partials/footer') %>
 </div>
-
-<%- include('../partials/footer') %>

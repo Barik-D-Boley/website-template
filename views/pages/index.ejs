@@ -1,6 +1,34 @@
 <%- include('../partials/head', {title: "Home"}) %>
-<%- include('../partials/navbar') %>
 
-<p>Hi, I am <%= user.firstName %></p>
+<div id="home-page">
+    <%- include('../partials/navbar') %>
 
-<%- include('../partials/footer') %>
+    <div class="homepage-container-div">
+        <div id="profile-picture-container">
+            <img src="https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png" alt="Portrait" id="profile-picture" />
+        </div>
+        <div id="profile-information">
+            <h1>Your Name</h1>
+            <h3>Professional Title</h3>
+            <div>
+                <p id="homepage-description">Personal Description --- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, incidunt aperiam pariatur enim ab id autem amet, ea, libero quis accusantium cum? Commodi necessitatibus neque corrupti atque aperiam provident amet error, optio est. Earum eaque unde sunt fugit, atque velit temporibus doloribus quia culpa saepe laboriosam facere labore, accusamus blanditiis exercitationem officiis sit voluptatum corporis sint. Dicta laboriosam maiores voluptatem, pariatur repudiandae recusandae voluptates hic. Quos pariatur officiis voluptatum nulla. Aperiam, quis ea. Adipisci maxime iste vel minus tempore unde omnis illo ullam, asperiores reprehenderit! Nihil nostrum iusto, animi unde laboriosam fugiat perferendis impedit placeat dicta.</p>
+            </div>
+            <div id="socials">
+                <a href="sms:<!-- Your Phone Number -->">
+                    <img src="https://cdn-icons.flaticon.com/png/128/3059/premium/3059446.png?token=exp=1647845859~hmac=6f18dd4ac69f72ab457d2f740f49cb79" alt="Phone" />
+                </a>
+                <a href="mailto:<!-- Your Email -->">
+                    <img src="https://cdn-icons.flaticon.com/png/128/2099/premium/2099199.png?token=exp=1647845387~hmac=6486d256e61157e3b7a8179625f20ecb" alt="Email" />
+                </a>
+                <a href="<!-- Your Linkedin -->" target="_blank" rel="noreferrer">
+                    <img src="https://cdn-icons.flaticon.com/png/128/3536/premium/3536569.png?token=exp=1647896970~hmac=ddff1c54ee001c2cb1eb47bf3e3ddeba" alt="Linkedin" />
+                </a>
+                <a href="https://github.com/<!-- Your Github Username -->" target="_blank" rel="noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png" alt="Github" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../partials/footer') %>
+</div>
