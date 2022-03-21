@@ -1,6 +1,18 @@
 <%- include('../partials/head', {title: "Contact"}) %>
-<%- include('../partials/navbar') %>
 
-<p>Contact Page</p>
+<div class="contact-page">
+    <%- include('../partials/navbar') %>
 
-<%- include('../partials/footer') %>
+    <div id="contact-container-div" class="container-div">
+        <h5>Get in Touch</h5>
+        <form id="send-email" action="mailto:barik.boley@gmail.com" method="post" enctype="multipart/form-data">
+            <input type="text" id="name-input" class="email-input" placeholder="Your Name:" name="from_name" autocomplete="name" /><hr />
+            <input type="email" id="email-input" class="email-input" placeholder="Your Email:" name="from_email" autocomplete="email" /><hr />
+            <input type="text" id="email-subject" class="email-input" placeholder="Subject:" name="subject" autocomplete="off" />
+            <textarea type="text" id="email-content" class="email-input" placeholder="Dear Barik," name="message" autocomplete="off"></textarea>
+            <input type="submit" value="Send" id="submit-btn" class="email-input" onclick="window.location='mailto:Your Email?subject=' + subject + '&body' + body" />
+        </form>
+    </div>
+
+    <%- include('../partials/footer') %>
+</div>

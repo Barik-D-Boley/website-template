@@ -7,7 +7,7 @@ const express = require("express"),
     // passportLocalMongoose = require("passport-local-mongoose"),
     // User = require("./models/user");
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5001
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: false }));

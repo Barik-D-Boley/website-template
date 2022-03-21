@@ -4,7 +4,7 @@
 #resume-container {
     display: flex;
     background-color: $resume-background;
-    margin: 0 auto;
+    margin: 6rem auto 2rem auto;
     padding: 3.5rem;
     width: 77rem;
     border-radius: 1rem;
@@ -46,7 +46,8 @@
     justify-content: space-between;
     margin-bottom: 1rem;
     #print-btn {
-        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
     }
 
     #resume-contacts {
@@ -62,9 +63,10 @@
                     color: $resume-link-hover;
                 }
                 .resume-icon {
-                    color: $resume-subtitles;
                     position: relative;
-                    top: .2rem
+                    top: .2rem;
+                    width: 1.3rem;
+                    height: 1.3rem;
                 }
             }
         }
@@ -84,7 +86,12 @@
 .download-btn {
     position: relative;
     top: .2rem;
-    margin-right: .2rem;
+    margin: 0 .2rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 #resume-website-link {
@@ -247,21 +254,12 @@ li.no-columns-list {
         position: relative;
         top: 3rem;
     }
-    #navbar {
+    nav {
         display: none;
         margin: 0;
         box-shadow: none;
     }
-    .nav-drop-down {
-        display: none;
-    }
-    #nav-top {
-        display: none;
-    }
-    #drop-down-icon {
-        display: none;
-    }
-    #nav-title {
+    footer {
         display: none;
     }
     .resume-btn {
@@ -274,6 +272,8 @@ li.no-columns-list {
         position: relative;
         bottom: 4rem;
         background: none;
+        margin: 0;
+        padding-bottom: 0;
         hr {
             display: block;
             height: 1px;
@@ -299,27 +299,15 @@ li.no-columns-list {
     }
     #brackets_1 {
         top: $brackets-top;
-        div {
-            height: 3.5rem;
-        }
     }
     #brackets_2 {
         top: $brackets-top+11.7rem;
-        div {
-            height: 6.3rem;
-        }
     }
     #brackets_3 {
-        top: $brackets-top+36rem;
-        div {
-            height: 5.5rem;
-        }
+        top: $brackets-top+33rem;
     }
     #brackets_4 {
-        top: $brackets-top+54.2;
-        div {
-            height: 7rem;
-        }
+        top: $brackets-top+51.2;
     }
 
     // Dots Positioning
@@ -328,6 +316,6 @@ li.no-columns-list {
         top: $dots-top;
     }
     #dots_2 {
-        top: $dots-top+34rem;
+        top: $dots-top+31rem;
     }
 }

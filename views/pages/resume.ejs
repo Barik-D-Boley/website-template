@@ -1,233 +1,235 @@
-<%- include('../partials/head', {title: "About"}) %>
-<%- include('../partials/navbar') %>
+<%- include('../partials/head', {title: "Resume"}) %>
 
-<div id="resume-container">
-    <!-- Resume Top -->
-    <div id="resume-top">
-
-        <!-- Title -->
+<div id="resume-page">
+    <%- include('../partials/navbar') %>
+    
+    <div id="resume-container">
+        <!-- Resume Top -->
+        <div id="resume-top">
+    
+            <!-- Title -->
+            <div>
+                <h1>Your Name</h1>
+                <h2>Professional Job Title</h2>
+                <button class="resume-btn" title="Print resume" onClick="window.print()"><img id="print-btn" src="https://cdn-icons.flaticon.com/png/128/2874/premium/2874793.png?token=exp=1647845920~hmac=6fad1676860e7f5cb4f0874a77505921" alt="Print" /></button>
+            </div>
+    
+            <!-- Contacts -->
+            <div id="resume-contacts">
+                <div class="contact-div"><a class="resume-text" href="mailto:<!-- Your email -->">Your email <img class="resume-icon" src="https://cdn-icons.flaticon.com/png/128/2099/premium/2099199.png?token=exp=1647845387~hmac=6486d256e61157e3b7a8179625f20ecb" alt="email"></a></div>
+                <div class="contact-div"><a class="resume-text" href="tel:<!-- You phone number -->">Your phone number <img class="resume-icon" src="https://cdn-icons.flaticon.com/png/128/3059/premium/3059446.png?token=exp=1647845859~hmac=6f18dd4ac69f72ab457d2f740f49cb79" alt="Phone"></a></div>
+                <div class="contact-div"><a class="resume-text" href="<!-- Google maps link to your city -->" target="_blank" rel="noreferrer">Your city, Your country <img class="resume-icon" src="https://cdn-icons-png.flaticon.com/128/2948/2948253.png" alt="Location"></a></div>
+                <div class="contact-div"><a class="resume-text" href="https://github.com/<!-- Your Github username -->" target="_blank" rel="noreferrer">github.com/github username <img class="resume-icon" src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png" alt="Github"></a></div>
+                <div class="contact-div" id="resume-website-link"><a class="resume-text" href="Your website name" target="_blank" rel="noreferrer">Your website name <img class="resume-icon" src="https://cdn-icons.flaticon.com/png/128/2721/premium/2721688.png?token=exp=1647845801~hmac=a11f4f0511a32bf2d40c44b87baa0c10" alt="Website"></a></div>
+            </div>
+        </div>
+    
+        <!-- Resume Statement -->
         <div>
-            <h1>Barik Boley</h1>
-            <h2>Full Stack Web Developer</h2>
-            <button id="print-btn" class="resume-btn" title="Print resume" onClick="window.print()"><img src="https://cdn-icons.flaticon.com/png/128/2874/premium/2874793.png?token=exp=1647845920~hmac=6fad1676860e7f5cb4f0874a77505921" alt="Print" /></button>
-        </div>
-
-        <!-- Contacts -->
-        <div id="resume-contacts">
-            <div class="contact-div"><a class="resume-text" href="mailto:barik.boley@gmail.com">barik.boley@gmail.com <img src="https://cdn-icons.flaticon.com/png/128/2099/premium/2099199.png?token=exp=1647845387~hmac=6486d256e61157e3b7a8179625f20ecb" alt="email"></a></div>
-            <div class="contact-div"><a class="resume-text" href="tel:602-668-6436">(602) 668-6436 <img src="https://cdn-icons.flaticon.com/png/128/3059/premium/3059446.png?token=exp=1647845859~hmac=6f18dd4ac69f72ab457d2f740f49cb79" alt="Phone"></a></div>
-            <div class="contact-div"><a class="resume-text" href="https://www.google.com/maps/place/Phoenix,+AZ/@33.6050991,-112.4052323,10z/data=!3m1!4b1!4m5!3m4!1s0x872b12ed50a179cb:0x8c69c7f8354a1bac!8m2!3d33.4483771!4d-112.0740373" target="_blank" rel="noreferrer">Phoenix, United States <img src="https://cdn-icons-png.flaticon.com/128/2948/2948253.png" alt="Location"></a></div>
-            <div class="contact-div"><a class="resume-text" href="https://github.com/xBarikadex" target="_blank" rel="noreferrer">github.com/xBarikadex <img src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png" alt="Github"></a></div>
-            <div class="contact-div" id="resume-website-link"><a class="resume-text" href="barikboley.com" target="_blank" rel="noreferrer">barikboley.com <img src="https://cdn-icons.flaticon.com/png/128/2721/premium/2721688.png?token=exp=1647845801~hmac=a11f4f0511a32bf2d40c44b87baa0c10" alt="Website"></a></div>
-        </div>
-    </div>
-
-    <!-- Resume Statement -->
-    <div>
-        <p class="resume-text center-text">Actively seeking an entry-level position to gain practical experience and grow my professional skills. Eager and motivated to help the MEP department.</p>
-    </div>  
-
-    <!-- Resume Bottom -->
-    <div id="resume-bottom">
-        <!-- Left Column -->
-        <div class="column">
-            <!-- Education -->
-            <div>
-                <h3>Education</h3><hr/>
-                <!-- Web Development -->
-                <div class="text-boxes">
-                    <h4 class="experience-title">Full Stack Web Development</h4>
-                    <h4 class="experience-subtitle">West MEC - Technical Training Education</h4>
-                    <div class="inline-date-container">
-                        <p class="resume-subtitles">08/2020 - Exp. Grad 05/2022</p>
-                        <p class="resume-subtitles">3.75 GPA</p>
+            <p class="resume-text center-text">Fill this out with your resume statement --- Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officia adipisci optio sint nostrum consequuntur. Deleniti totam quaerat ea enim, sapiente sequi temporibus incidunt sunt.</p>
+        </div>  
+    
+        <!-- Resume Bottom -->
+        <div id="resume-bottom">
+            <!-- Left Column -->
+            <div class="column">
+                <!-- Education -->
+                <div>
+                    <h3>Education</h3><hr/>
+                    <!-- Web Development -->
+                    <div class="text-boxes">
+                        <h4 class="experience-title">Study Program</h4>
+                        <h4 class="experience-subtitle">Institution/Place of Education</h4>
+                        <div class="inline-date-container">
+                            <p class="resume-subtitles">08/2020 - 05/2022</p>
+                            <p class="resume-subtitles">GPA</p>
+                        </div>
+                        <div>
+                            <p class="list-title">Technical Courses</p>
+                            <ul class="experience-list columns-list">
+                                <li class="resume-text">Course</li>
+                                <li class="resume-text">Course</li>
+                            </ul>
+    
+                            <!-- Brackets -->
+                            <div class="bracket-pair" id="brackets_1">
+                                <div class="opening-bracket"></div>
+                                <div class="closing-bracket"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p class="list-title">Technical Courses</p>
-                        <ul class="experience-list columns-list">
-                            <li class="resume-text">Coding Fundamentals</li>
-                            <li class="resume-text">Coding III</li>
-                        </ul>
-
-                        <!-- Brackets -->
-                        <div class="bracket-pair" id="brackets_1">
-                            <div class="opening-bracket"></div>
-                            <div class="closing-bracket"></div>
+    
+                    <!-- Engineering -->
+                    <div class="text-boxes">
+                        <h4 class="experience-title">Study Program</h4>
+                        <h4 class="experience-subtitle">Institution/Place of Education</h4>
+                        <div class="inline-date-container">
+                            <p class="resume-subtitles">08/2020 - 05/2022</p>
+                            <p class="resume-subtitles">GPA</p>
+                        </div>
+                        <div>
+                            <p class="list-title">Technical Courses</p>
+                            <ul class="experience-list columns-list">
+                                <li class="resume-text">Course</li>
+                                <li class="resume-text">Course</li>
+                                <li class="resume-text">Course</li>
+                                <li class="resume-text">Course</li>
+                            </ul>
+    
+                            <!-- Brackets -->
+                            <div class="bracket-pair" id="brackets_2">
+                                <div class="opening-bracket"></div>
+                                <div class="closing-bracket"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Engineering -->
-                <div class="text-boxes">
-                    <h4 class="experience-title">CTE Engineering</h4>
-                    <h4 class="experience-subtitle">Boulder Creek High School</h4>
-                    <div class="inline-date-container">
-                        <p class="resume-subtitles">08/2018 - Exp. Grad 05/2022</p>
-                        <p class="resume-subtitles">3.88 GPA</p>
-                    </div>
-                    <div>
-                        <p class="list-title">Technical Courses</p>
-                        <ul class="experience-list">
-                            <li class="resume-text">Introduction to Engineering</li>
-                            <li class="resume-text">Principles of Engineering</li>
-                            <li class="resume-text">Aerospace Engineering</li>
-                            <li class="resume-text">Engineering Design and Development</li>
-                        </ul>
-
-                        <!-- Brackets -->
-                        <div class="bracket-pair" id="brackets_2">
-                            <div class="opening-bracket"></div>
-                            <div class="closing-bracket"></div>
+    
+                <!-- Work Experience -->
+                <div>
+                    <h3>Work Experience</h3><hr/>
+                    <!-- First Job -->
+                    <div class="text-boxes">
+                        <h4 class="experience-title">Title/Position</h4>
+                        <h4 class="experience-subtitle">Workplace/Company</h4>
+                        <div class="inline-date-container">
+                            <p class="resume-subtitles">04/2021 - 07/2021</p>
+                            <p class="resume-subtitles">City, Country</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work Experience -->
-            <div>
-                <h3>Work Experience</h3><hr/>
-                <!-- Sales Associate -->
-                <div class="text-boxes">
-                    <h4 class="experience-title">Sales Associate</h4>
-                    <h4 class="experience-subtitle">Go Paddle AZ</h4>
-                    <div class="inline-date-container">
-                        <p class="resume-subtitles">04/2021 - 07/2021</p>
-                        <p class="resume-subtitles">Peoria AZ, USA</p>
-                    </div>
-                    <p class="resume-description">Kayak and Paddleboard rental company at Lake Pleasant</p>
-                    <div>
-                        <p class="list-title">Achievements/Tasks</p>
-                        <ul class="experience-list">
-                            <li class="resume-text no-columns-list">Clean and Maintain Equipment</li>
-                            <li class="resume-text no-columns-list">Give customers proper equipment</li>
-                            <li class="resume-text no-columns-list">Help customers into and out of the lake</li>
-                        </ul>
-
-                        <!-- Brackets -->
-                        <div class="bracket-pair" id="brackets_3">
-                            <div class="opening-bracket"></div>
-                            <div class="closing-bracket"></div>
+                        <p class="resume-description">Company Description</p>
+                        <div>
+                            <p class="list-title">Achievements/Tasks</p>
+                            <ul class="experience-list">
+                                <li class="resume-text no-columns-list">Accomplishment/Responsibility/Task</li>
+                                <li class="resume-text no-columns-list">Accomplishment/Responsibility/Task</li>
+                                <li class="resume-text no-columns-list">Accomplishment/Responsibility/Task</li>
+                            </ul>
+    
+                            <!-- Brackets -->
+                            <div class="bracket-pair" id="brackets_3">
+                                <div class="opening-bracket"></div>
+                                <div class="closing-bracket"></div>
+                            </div>
                         </div>
+                        <p class="resume-subtitles">Contact: Contact Person - <a href="tel:<!-- Contact phone number -->">Contact phone number</a></p>
                     </div>
-                    <p class="resume-subtitles">Contact: Jared Sutter - <a href="tel:6025714930">(602) 571-4930</a></p>
-                </div>
-
-                <!-- Landscaper -->
-                <div class="text-boxes">
-                    <h4 class="experience-title">Landscaper</h4>
-                    <h4 class="experience-subtitle">J&R Property Maintenance Corp.</h4>
-                    <div class="inline-date-container">
-                        <p class="resume-subtitles">05/2020 - 07/2020</p>
-                        <p class="resume-subtitles">West Jordan UT, USA</p>
-                    </div>
-                    <p class="resume-description">Residential landscaping and monthly lawn/vegetation maintenance</p>
-                    <div>
-                        <p class="list-title">Achievements/Tasks</p>
-                        <ul class="experience-list">
-                            <li class="resume-text no-columns-list">10-12 hour days, 5 days a week</li>
-                            <li class="resume-text no-columns-list">Laying sod</li>
-                            <li class="resume-text no-columns-list">Installing residential pathways</li>
-                            <li class="resume-text no-columns-list">Constructing walls</li>
-                        </ul>
-
-                        <!-- Brackets -->
-                        <div class="bracket-pair" id="brackets_4">
-                            <div class="opening-bracket"></div>
-                            <div class="closing-bracket"></div>
+    
+                    <!-- Second Job -->
+                    <div class="text-boxes">
+                        <h4 class="experience-title">Title/Position</h4>
+                        <h4 class="experience-subtitle">Workplace/Company</h4>
+                        <div class="inline-date-container">
+                            <p class="resume-subtitles">04/2021 - 07/2021</p>
+                            <p class="resume-subtitles">City, Country</p>
                         </div>
+                        <p class="resume-description">Company Description</p>
+                        <div>
+                            <p class="list-title">Achievements/Tasks</p>
+                            <ul class="experience-list">
+                                <li class="resume-text no-columns-list">Accomplishment/Responsibility/Task</li>
+                                <li class="resume-text no-columns-list">Accomplishment/Responsibility/Task</li>
+                                <li class="resume-text no-columns-list">Accomplishment/Responsibility/Task</li>
+                                <li class="resume-text no-columns-list">Accomplishment/Responsibility/Task</li>
+                            </ul>
+    
+                            <!-- Brackets -->
+                            <div class="bracket-pair" id="brackets_4">
+                                <div class="opening-bracket"></div>
+                                <div class="closing-bracket"></div>
+                            </div>
+                        </div>
+                        <p class="resume-subtitles">Contact: Contact Person - <a href="tel:<!-- Contact phone number -->">Contact phone number</a></p>
                     </div>
-                    <p class="resume-subtitles">Contact: James Smith - <a href="tel:8016528366">(801) 652-8366</a></p>
+                </div>
+    
+                <!-- Connected Dots 1 -->
+                <div class="connected-bullets" id="dots_1">
+                    <div class="circle"></div>
+                    <div class="line" id="line_1"></div>
+                    <div class="circle circle_2"></div>
+                </div>
+    
+                <!-- Connected Dots 2 -->
+                <div class="connected-bullets" id="dots_2">
+                    <div class="circle"></div>
+                    <div class="line" id="line_2"></div>
+                    <div class="circle circle_2"></div>
                 </div>
             </div>
-
-            <!-- Connected Dots 1 -->
-            <div class="connected-bullets" id="dots_1">
-                <div class="circle"></div>
-                <div class="line" id="line_1"></div>
-                <div class="circle circle_2"></div>
-            </div>
-
-            <!-- Connected Dots 2 -->
-            <div class="connected-bullets" id="dots_2">
-                <div class="circle"></div>
-                <div class="line" id="line_2"></div>
-                <div class="circle circle_2"></div>
-            </div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="column">
-            <!-- Skills -->
-            <div>
-                <h3>Skills</h3><hr/>
-
-                <div class="text-boxes">
-                    <div class="resume-text skill-box">Active Listening</div>
-                    <div class="resume-text skill-box">Leadership</div>
-                    <div class="resume-text skill-box">Computer Skills</div>
-                    <div class="resume-text skill-box">Hard Working</div>
-                    <div class="resume-text skill-box">Dedicated</div>
-                    <div class="resume-text skill-box">Troubleshooting</div>
-                    <div class="resume-text skill-box">Web Development</div>
-                    <div class="resume-text skill-box">Computer-Assisted Design</div>
+    
+            <!-- Right Column -->
+            <div class="column">
+                <!-- Skills -->
+                <div>
+                    <h3>Skills</h3><hr/>
+    
+                    <div class="text-boxes">
+                        <div class="resume-text skill-box">Skill</div>
+                        <div class="resume-text skill-box">Skill</div>
+                        <div class="resume-text skill-box">Skill</div>
+                        <div class="resume-text skill-box">Skill</div>
+                        <div class="resume-text skill-box">Skill</div>
+                        <div class="resume-text skill-box">Skill</div>
+                        <div class="resume-text skill-box">Skill</div>
+                        <div class="resume-text skill-box">Skill</div>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Personal Projects -->
-            <div id="personal-projects">
-                <h3>Personal Projects</h3><hr/>
-
-                <div class="text-boxes">
-                    <p class="resume-text">Building Computers (06/2017 - Present)</p>
-                    <ul class="descriptor-list"><li>Building and upgrading my desktop</li></ul>
-
-                    <p class="resume-text">Portfolio Website (02/2021 - Present)</p>
-                    <ul class="descriptor-list"><li>Creating and updating my portfolio website</li></ul>
-
-                    <p class="resume-text">Eagle Project (10/2019 - 11/2019)</p>
-                    <ul class="descriptor-list">
-                        <li>Organized a retirement home talent show at Merrill Gardens</li>
-                        <li>Coordinated With Merrill Gardens" executive director</li>
-                        <li>Planned the entertainment and refreshments</li>
-                    </ul>
+                
+                <!-- Personal Projects -->
+                <div id="personal-projects">
+                    <h3>Personal Projects</h3><hr/>
+    
+                    <div class="text-boxes">
+                        <p class="resume-text">Project Name (06/2017 - Present)</p>
+                        <ul class="descriptor-list"><li>Description of Achievements</li></ul>
+    
+                        <p class="resume-text">Project Name (06/2017 - 06/2017)</p>
+                        <ul class="descriptor-list"><li>Description of Achievements</li></ul>
+    
+                        <p class="resume-text">Project Name (06/2017 - 06/2017)</p>
+                        <ul class="descriptor-list">
+                            <li>Description of Achievements</li>
+                            <li>Description of Achievements</li>
+                            <li>Description of Achievements</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Organizations -->
-            <div>
-                <h3>Organizations</h3><hr/>
-
-                <div class="text-boxes">
-                    <p class="resume-text">Future Business Leaders of America (08/2020 - 05/2022)</p>
-                    <p class="resume-text">Boys Scouts of America (03/2016 - 12/2019)</p>
-                    <p class="resume-description">Eagle Scout</p>
+    
+                <!-- Organizations -->
+                <div>
+                    <h3>Organizations</h3><hr/>
+                    <div class="text-boxes">
+                        <p class="resume-text">Organization Name (08/2020 - 05/2022)</p>
+                        <p class="resume-text">Organization Name (08/2020 - 05/2022)</p>
+                        <p class="resume-description">Role</p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Certificates -->
-            <div>
-                <h3>Certificates</h3><hr/>
-
-                <div class="text-boxes">
-                    <p class="resume-text">Autodesk Certification<Link to="/Downloads/Autodesk_Certification.pdf" target="_blank" download class="resume-btn download-btn" title="Autodesk certification download"><img src="https://cdn-icons-png.flaticon.com/128/2810/2810390.png" alt="Download" /></Link>(08/2018 - 05/2021)</p>
-                    <p class="resume-description">Certiport Professional Exam</p>
-
-                    <p class="resume-text">MTA HTML5 and CSS3<Link to="/Downloads/HTML5_Certification.pdf" target="_blank" download class="resume-btn download-btn" title="HTML5 certification download"><img src="https://cdn-icons-png.flaticon.com/128/2810/2810390.png" alt="Download" /></Link>(08/2020 - 05/2021)</p>
-                    <p class="resume-description">Microsoft Technology Associate</p>
+    
+                <!-- Certificates -->
+                <div>
+                    <h3>Certificates</h3><hr/>
+    
+                    <div class="text-boxes">
+                        <p class="resume-text">Certification Name<img class="download-btn resume-btn" src="https://cdn-icons-png.flaticon.com/128/2810/2810390.png" alt="Download" />(08/2018 - 05/2021)</p>
+                        <p class="resume-description">Description</p>
+    
+                        <p class="resume-text">Certification Name<img class="download-btn resume-btn" src="https://cdn-icons-png.flaticon.com/128/2810/2810390.png" alt="Download" />(08/2018 - 05/2021)</p>
+                        <p class="resume-description">Description</p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Interests -->
-            <div>
-                <h3>Interests</h3><hr/>
-
-                <div class="text-boxes">
-                    <div class="resume-text interest-box">Lifting Weights</div>
-                    <div class="resume-text interest-box">Building Computers</div>
+    
+                <!-- Interests -->
+                <div>
+                    <h3>Interests</h3><hr/>
+    
+                    <div class="text-boxes">
+                        <div class="resume-text interest-box">Interest</div>
+                        <div class="resume-text interest-box">Interest</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <%- include('../partials/footer') %>
 </div>
-
-<%- include('../partials/footer') %>

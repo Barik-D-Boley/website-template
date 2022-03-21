@@ -1,4 +1,4 @@
-$dots-top: 33.7rem;
+$dots-top: 31.3rem;
 
 .connected-bullets {
     position: absolute;
@@ -35,34 +35,13 @@ $dots-top: 33.7rem;
 }
 
 #dots_2 {
-    top: $dots-top+34.5rem;
+    top: $dots-top+31.5rem;
 }
 #line_2 {
     height: 16.7rem;
 }
 
-// For when the resume becomes one column
 @media screen and (max-width: 77rem) {
-    $dots-top: 35rem;
-    #dots_1 {
-        top: $dots-top;
-    }
-    #dots_2 {
-        top: $dots-top+34.5rem;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    $dots-top: 32.5rem;
-    #dots_1 {
-        top: $dots-top;
-    }
-    #dots_2 {
-        top: $dots-top+34.5rem;
-    }
-}
-
-@media screen and (max-width: 630px) {
     .connected-bullets {
         display: none;
     }

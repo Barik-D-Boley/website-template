@@ -1,0 +1,96 @@
+#contact-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 11vh;
+    max-width: 100vw;
+}
+.container-div {
+    background-color: $tertiary-color;
+    border-radius: 1.5rem;
+    display: flex;
+    width: 85%;
+    padding: 2rem;
+    justify-content: space-around;
+    h1 {
+        color: $text-main;
+        font-size: 4rem;
+    }
+    h3 {
+        color: $text-main;
+        font-size: 2.5rem;
+    }
+    p {
+        color: #808080;
+        font-size: 1.5rem;
+    }
+}
+
+#contact-container-div {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin: 15vh auto 0 auto;
+    padding: 2rem 8vw;
+    height: 27rem;
+    width: 70%;
+    h5 {
+        position: relative;
+        top: 1rem;
+        font-size: 2.5rem;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+#email-label {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+.email-input {
+    width: 100%;
+    min-height: 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+}
+#email-content {
+    height: 10rem;
+    resize: none;
+    border: 1px solid $text-main;
+    border-radius: .5rem;
+    margin-top: .6rem;
+    padding: .3rem;
+}
+#submit-btn {
+    width: auto;
+    color: $tertiary-color;
+    padding: .3rem 1rem;
+    background-color: $submit-btn;
+    bottom: 0;
+    left: 0;
+    border: none;
+    border-radius: .4rem;
+    margin-top: .5rem;
+    position: relative;
+    transition: bottom 0.3s, left 0.3s, ease 0.3s;
+    &:hover {
+        cursor: pointer;
+        bottom: .3rem;
+        left: .3rem;
+        box-shadow: -.3rem .3rem $text-main;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #contact-container-div {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-height: 770px) {
+    #contactPage {
+        .footer {
+            position: relative;
+            margin-top: 3rem;
+        }
+    }
+}

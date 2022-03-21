@@ -1,10 +1,21 @@
 nav {
-    background-color: $nav-background;
+    background-color: $tertiary-color;
     display: flex;
     justify-content: space-between;
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 15;
+    box-shadow: 0 0 .1rem .2rem #0000007f;
+}
+#nav-name {
+    font-size: 2rem;
+    color: $text-main;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    &:hover {
+        color: $text-hover;
+    }
 }
 #nav-left {
     display: flex;
@@ -20,6 +31,7 @@ nav {
         font-size: 1.2rem;
         color: $text-main;
         text-decoration: none;
+        transition: color 0.2s ease;
         &:hover {
             color: $text-hover;
         }
