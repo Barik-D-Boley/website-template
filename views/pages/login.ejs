@@ -3,16 +3,18 @@
 <div id="login-page">
     <%- include('../partials/navbar') %>
 
-    <div id="login-form-container">
-        <form action="/login" method="post">
-            <p>Email:</p>
-            <input type="email" name="email" required>
-            <p>Password:</p>
-            <input type="password" name="password" required>
-            <input type="submit" value="Login">
-        </form>
-        <a href="/register">Create a new Account</a>
-    </div>
+    <div class="form-container">
+            <div class="form-top">
+                <form action="/login" method="post">
+                    <p>Email</p>
+                    <input type="email" name="email" required>
+                    <p>Password</p>
+                    <input type="password" name="password" required>
+                    <div><input type="submit" value="Login" id="login-btn"></div>
+                </form>
+            </div>
+            <div><p>Not registered? <a href="/register">Create an account</a></p></div>
+        </div>
 
     <%- include('../partials/footer') %>
 </div>
