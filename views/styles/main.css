@@ -417,10 +417,9 @@ footer .footer-logo {
   margin: 0 1rem;
 }
 
-@media screen and (max-height: 990px) {
+@media screen and (max-height: 950px) {
   #home-page footer {
     position: relative;
-    box-sizing: none;
     margin-top: 2rem;
   }
 }
@@ -433,7 +432,12 @@ footer .footer-logo {
   .contact-page footer {
     position: relative;
     margin-top: 3rem;
-    box-sizing: none;
+  }
+}
+@media screen and (max-height: 825px) {
+  #login-page footer {
+    position: relative;
+    margin-top: 3rem;
   }
 }
 nav {
@@ -466,7 +470,7 @@ nav {
 #nav-right {
   display: flex;
   align-items: center;
-  margin: 0 1rem;
+  margin: 0 1.5rem 0 0;
 }
 #nav-right a {
   margin: 0 0.3rem;
@@ -513,6 +517,83 @@ nav {
     height: 1.75rem;
   }
 }
+.form-container {
+  display: flex;
+  background: #ffffff;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  width: 30rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.form-container * {
+  font-size: 1.2rem;
+}
+.form-container h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+}
+.form-container img {
+  height: 4rem;
+  width: auto;
+  margin: 0 auto 0.5rem auto;
+}
+.form-container .form-top {
+  display: flex;
+  justify-content: center;
+}
+.form-container .form-top p {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 0.1rem;
+}
+.form-container .form-top input {
+  margin-bottom: 1rem;
+  width: 15rem;
+}
+.form-container form div {
+  display: flex;
+  justify-content: center;
+}
+.form-container #login-btn {
+  width: 100%;
+  background-color: #006dfe;
+  border: none;
+  color: white;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  padding: 0.2rem;
+  margin-top: 2rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.3s, left 0.3s, ease 0.3s;
+}
+.form-container #login-btn:hover {
+  cursor: pointer;
+  bottom: 0.2rem;
+  left: 0.2rem;
+  box-shadow: -0.2rem 0.2rem #000000;
+}
+.form-container a {
+  text-decoration: none;
+  color: #0000ff;
+  transition: color 0.3s ease;
+}
+.form-container a:hover {
+  color: #0400d9;
+}
+
+.form-container > div {
+  display: flex;
+  justify-content: center;
+}
+.form-container > div p {
+  margin: 0;
+}
+
 @font-face {
   font-family: oswald;
   src: url("./fonts/Oswald.ttf");
@@ -1152,18 +1233,10 @@ li.no-columns-list {
     height: 24rem;
   }
 }
-#login-form-container {
-  display: flex;
-  background: #ffffff;
-  margin: 0 auto;
-  margin-top: 6rem;
-  border-radius: 1.5rem;
-  width: 30rem;
-  padding: 2rem;
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content: center;
+#login-page .form-container {
+  margin-top: 22vh;
 }
-#login-form-container p {
-  margin: 0;
+
+#register-page .form-container {
+  margin-top: 15vh;
 }/*# sourceMappingURL=main.css.map */

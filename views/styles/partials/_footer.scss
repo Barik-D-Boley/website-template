@@ -62,11 +62,10 @@ footer {
 }
 
 // Homepage
-@media screen and (max-height: 990px) {
+@media screen and (max-height: 950px) {
     #home-page {
         footer {
             position: relative;
-            box-sizing: none;
             margin-top: 2rem;
         }
     }
@@ -86,7 +85,16 @@ footer {
         footer {
             position: relative;
             margin-top: 3rem;
-            box-sizing: none;
+        }
+    }
+}
+
+// Login
+@media screen and (max-height: 825px) {
+    #login-page {
+        footer {
+            position: relative;
+            margin-top: 3rem;
         }
     }
 }

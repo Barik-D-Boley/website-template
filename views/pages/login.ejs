@@ -4,17 +4,19 @@
     <%- include('../partials/navbar') %>
 
     <div class="form-container">
-            <div class="form-top">
-                <form action="/login" method="post">
-                    <p>Email</p>
-                    <input type="email" name="email" required>
-                    <p>Password</p>
-                    <input type="password" name="password" required>
-                    <div><input type="submit" value="Login" id="login-btn"></div>
-                </form>
-            </div>
-            <div><p>Not registered? <a href="/register">Create an account</a></p></div>
+        <h2>Website Name</h2>
+        <img src="https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png" alt="Logo">
+        <div class="form-top">
+            <form>
+                <p>Email</p>
+                <input id="login-email-input" type="email" name="email" required>
+                <p>Password</p>
+                <input id="login-password-input" type="password" name="password" autocomplete="current-password" required>
+                <div><input type="submit" value="Login" id="login-btn"></div>
+            </form>
         </div>
+        <div><p>Not registered? <a href="/register">Create an account</a></p></div>
+    </div>
 
     <%- include('../partials/footer') %>
 </div>
