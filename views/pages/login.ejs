@@ -7,9 +7,9 @@
         <h2>Website Name</h2>
         <img src="https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png" alt="Logo">
         <div class="form-top">
-            <form>
+            <form id="login-form">
                 <p>Email</p>
-                <input id="login-email-input" type="email" name="email" required>
+                <input id="login-email-input" type="email" name="email" autocomplete="email" required>
                 <p>Password</p>
                 <input id="login-password-input" type="password" name="password" autocomplete="current-password" required>
                 <div><input type="submit" value="Login" id="login-btn"></div>
@@ -20,3 +20,8 @@
 
     <%- include('../partials/footer') %>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src='../login.js'></script>

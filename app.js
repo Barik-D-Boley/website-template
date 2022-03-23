@@ -1,13 +1,15 @@
 const express = require("express"),
     app = express(),
     // bodyParser = require("body-parser"),
-    userRoutes = require("./login/api/userRoutes"),
-    connectDB = require("./login/api/connectDB"),
-    populateUsers = require("./login/api/populate"),
+    userRoutes = require("./login/userRoutes"),
+    connectDB = require("./login/connectDB"),
+    populateUsers = require("./login/populate"),
+    ensureAuthenticated = require("./login/ensureAuthenticated"),
     port = process.env.PORT || 5000
 
 require('dotenv').config();
 app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public'));
 
 // app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/styles", express.static(__dirname + "/views/styles")) // Use this when linking stuff in ejs
@@ -36,16 +38,15 @@ app.get('/contact', function (req, res) {
 app.get('/login', function (req, res) {
     res.render('pages/login');
 });
-app.post('/api/v1/users', function (req, res) {
-    // Insert Login Code Here
-    let username = req.body.email;
-    let password = req.body.password;
-    res.send(`Username: ${username} Password: ${password}`);
-});
 
 // Register Page
 app.get('/register', function (req, res) {
     res.render('pages/register');
+});
+
+// Logged in Page
+app.get('/loggedIn', /* ensureAuthenticated, */ function (req, res) {
+    res.render('pages/loggedIn');
 });
 
 const start = async () => {

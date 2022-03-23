@@ -7,15 +7,15 @@
         <h2>Website Name</h2>
         <img src="https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png" alt="Logo">
         <div class="form-top">
-            <form action="/login" method="post">
+            <form id="register-form">
                 <p>Display Name</p>
-                <input id="register-name-input" type="text" name="display-name" required>
+                <input id="register-name-input" type="text" name="display-name" autocomplete="name" required>
                 <p>Email</p>
-                <input id="register-email-input" type="email" name="email" required>
+                <input id="register-email-input" type="email" name="email" autocomplete="email" required>
                 <p>Password</p>
-                <input id="register-password1-input" type="password" name="password_1" autocomplete="off" required>
+                <input id="register-password1-input" autocomplete="false" type="password" name="password_1" required>
                 <p>Confirm Password</p>
-                <input id="register-password2-input" type="password" name="password_2" autocomplete="off" required>
+                <input id="register-password2-input" autocomplete="false" type="password" name="password_2" required>
                 <div><input type="submit" value="Register" id="login-btn"></div>
             </form>
         </div>
@@ -25,4 +25,7 @@
         <%- include('../partials/footer') %>
 </div>
 
-<script src='../../login/login.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src='../register.js'></script>
