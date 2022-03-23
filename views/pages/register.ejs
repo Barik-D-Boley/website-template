@@ -7,6 +7,7 @@
         <h2>Website Name</h2>
         <img src="https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png" alt="Logo">
         <div class="form-top">
+            // Register Form
             <form id="register-form">
                 <p>Display Name</p>
                 <input id="register-name-input" type="text" name="display-name" autocomplete="name" required>
@@ -22,10 +23,13 @@
         <div><p>Already have an account? <a href="/login">Sign in</a></p></div>
     </div>
 
-        <%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>
 </div>
 
+// Axios
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
     integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+// Register JS
 <script src='../register.js'></script>
