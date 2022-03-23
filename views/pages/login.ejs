@@ -7,6 +7,7 @@
         <h2>Website Name</h2>
         <img src="https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png" alt="Logo">
         <div class="form-top">
+            // Login Form
             <form id="login-form">
                 <p>Email</p>
                 <input id="login-email-input" type="email" name="email" autocomplete="email" required>
@@ -21,9 +22,12 @@
     <%- include('../partials/footer') %>
 </div>
 
+// Axios
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
     integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+// Login JS
 <script src='../login.js'>
     var isLoggedIn = false;
 </script>
