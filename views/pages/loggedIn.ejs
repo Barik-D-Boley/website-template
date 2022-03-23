@@ -1,9 +1,13 @@
 <%- include('../partials/head', {title: "Logged In" }) %>
 
-<div id="login-page">
+<div id="logged-in-page">
     <%- include('../partials/navbar') %>
 
-    <p>You're logged in</p>
+    <div>
+        <p>You're logged in</p>
+    </div>
 
     <%- include('../partials/footer') %>
 </div>
+
+<script src="../ensureAuthenticated.js"></script>

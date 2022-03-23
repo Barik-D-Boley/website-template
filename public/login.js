@@ -16,7 +16,7 @@ loginFormDOM.addEventListener('submit', async (e) => {
         for (let i=0; i < users.length; i++) {
             if ((email === users[i].email) && (password === users[i].password)) {
                 console.log("Credentials match");
-                // Give the user access to the page
+                isLoggedIn = true;
                 window.location.pathname = "/loggedIn";
                 return;
             }

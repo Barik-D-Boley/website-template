@@ -4,7 +4,7 @@ const express = require("express"),
     userRoutes = require("./login/userRoutes"),
     connectDB = require("./login/connectDB"),
     populateUsers = require("./login/populate"),
-    ensureAuthenticated = require("./login/ensureAuthenticated"),
+    ensureAuthenticated = require("./public/ensureAuthenticated"),
     port = process.env.PORT || 5000
 
 require('dotenv').config();
@@ -20,32 +20,32 @@ app.use('/api/v1/users', userRoutes);
 app.use(express.static('public'));
 
 // index page
-app.get('/', function (req, res) {
+app.get('/', function(req, res) {
     res.render('pages/index');
 });
 
 // Resume page
-app.get('/resume', function (req, res) {
+app.get('/resume', function(req, res) {
     res.render('pages/resume');
 });
 
 // Contact Page
-app.get('/contact', function (req, res) {
+app.get('/contact', function(req, res) {
     res.render('pages/contact');
 });
 
 // Login Page
-app.get('/login', function (req, res) {
+app.get('/login', function(req, res) {
     res.render('pages/login');
 });
 
 // Register Page
-app.get('/register', function (req, res) {
+app.get('/register', function(req, res) {
     res.render('pages/register');
 });
 
 // Logged in Page
-app.get('/loggedIn', /* ensureAuthenticated, */ function (req, res) {
+app.get('/loggedIn', /* ensureAuthenticated, */ function(req, res) {
     res.render('pages/loggedIn');
 });
 

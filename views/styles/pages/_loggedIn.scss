@@ -1,0 +1,16 @@
+#logged-in-page {
+    display: flex;
+    justify-content: center;
+}
+
+#logged-in-page > div {
+    display: flex;
+    background-color: $tertiary-color;
+    margin-top: 22rem;
+    width: 30rem;
+    justify-content: center;
+    border-radius: 1.5rem;
+    p {
+
+    }
+}
